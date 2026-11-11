@@ -19,10 +19,8 @@ function App() {
         <Me />
         <Skil />
         <Domains />
-        <div className="duo">
         <Projects />
         <Contact />
-        </div>
       </main>
       <Footer />
     </>

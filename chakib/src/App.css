@@ -537,6 +537,56 @@ section { scroll-margin-top: 80px; }
 .btn:hover .arrow { transform: translateX(6px); }
 .btn-outline { background: transparent; color: var(--white); }
 .btn-outline:hover { background: var(--gold); color: var(--nav); border-color: var(--gold); }
+/* =========================================================
+   PROJECTS (cartes avec photos)
+   ========================================================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.project-card { padding: 0; text-align: left; height: 100%; }
+
+.project-img {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0e1847, #283ebe);
+}
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
+.project-card:hover .project-img img { transform: scale(1.1); }
+.project-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+}
+
+.project-body { padding: 16px 18px 18px; }
+.project-body h3 { color: var(--gold); font-size: 1.1rem; margin-bottom: 6px; }
+.project-body p { font-size: 0.85rem; line-height: 1.5; opacity: 0.9; margin-bottom: 10px; }
+.project-body .tags { justify-content: flex-start; margin-top: 0; }
+
+.project-links { display: flex; gap: 16px; margin-top: 14px; }
+.project-links a {
+  font-size: 0.85rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-out, color 0.3s ease-out;
+}
+.project-links a:hover { color: var(--white); border-color: var(--white); }
+
+.github-card { max-width: none; }
 
 /* =========================================================
    FOOTER
