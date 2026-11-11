@@ -2,7 +2,7 @@ import { useState } from "react";
 import Reveal from "./reveal";
 
 // ✏️ CHANGE YOUR GITHUB LINK HERE
-const GITHUB = "#";
+const GITHUB = "https://github.com/rayanchakiboudineche-cell";
 
 const projects = [
   {
